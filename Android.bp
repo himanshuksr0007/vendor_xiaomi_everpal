@@ -19097,10 +19097,8 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 cc_prebuilt_library_shared {
     name: "libmnl_vendor",
-    stem: "libmnl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -19108,7 +19106,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmnl.so",
+                "proprietary/vendor/lib64/libmnl_vendor.so",
             ],
             shared_libs: [
                 "libcutils",
