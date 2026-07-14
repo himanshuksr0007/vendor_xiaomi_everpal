@@ -977,7 +977,7 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmml \
     libmnetlink_v104 \
-    libmnl \
+    libmnl_vendor \
     libmpbase \
     libmsnr \
     libmtk-fusion-ril-prop-vsim \
