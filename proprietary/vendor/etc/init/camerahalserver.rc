@@ -8,3 +8,5 @@ service camerahalserver /vendor/bin/hw/camerahalserver
 
 on boot
     chmod 0666 /sys/kernel/fpsgo/common/force_onoff
+    setprop vendor.vidhance.enabled 0
+    setprop vendor.vidhance.preview.enabled 0
