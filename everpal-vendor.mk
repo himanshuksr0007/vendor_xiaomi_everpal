@@ -937,7 +937,7 @@ PRODUCT_PACKAGES += \
     libfeature_rss \
     libfeatureiodrv_mem \
     libforkexecwrap \
-    libformatter \
+    libformatter-v31 \
     libgamehdr \
     libged \
     libgf_ca \
@@ -977,7 +977,7 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmml \
     libmnetlink_v104 \
-    libmnl \
+    libmnl-v30 \
     libmpbase \
     libmsnr \
     libmtk-fusion-ril-prop-vsim \
