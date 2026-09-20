@@ -6,6 +6,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/everpal
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/everpal/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/xiaomi/everpal/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
+    vendor/xiaomi/everpal/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
+    vendor/xiaomi/everpal/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
+    vendor/xiaomi/everpal/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/xiaomi/everpal/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/xiaomi/everpal/proprietary/recovery/root/vendor/firmware/novatek_ts_ct_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_ct_fw.bin \
     vendor/xiaomi/everpal/proprietary/recovery/root/vendor/firmware/novatek_ts_ct_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_ct_mp.bin \
     vendor/xiaomi/everpal/proprietary/recovery/root/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw.bin \
@@ -334,6 +340,9 @@ PRODUCT_PACKAGES += \
     VP9SecureVdecCA \
     arm.graphics-V1-ndk_platform \
     libGLES_mali \
+    libVK13_mali \
+    libgpd1 \
+    libge2 \
     libGLES_meow \
     libMEOW_data \
     libMEOW_gift \
@@ -1196,4 +1205,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libdpframework_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libnir_neon_driver_so \
-    vendor_lib64_libpq_prot_so
+    vendor_lib64_libpq_prot_so \
+    vulkan.mt6833_symlink32 \
+    vulkan.mt6833_symlink64
