@@ -2907,22 +2907,12 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vulkan.mali.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/hw/vulkan.mali.so",
             ],
             shared_libs: [
+                "libVK13_mali",
                 "libc++",
                 "libc",
                 "libm",
@@ -2930,7 +2920,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -2943,18 +2933,42 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/egl/libVK13_mali.so",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/egl/libVK13_mali.so",
             ],
+            shared_libs: [
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.mapper@4.0",
+                "libbase",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libcutils",
+                "libdl",
+                "libdmabufheap",
+                "libge2",
+                "libgpd1",
+                "libgpu_aux",
+                "libgralloc_extra",
+                "libgralloc_metadata",
+                "libgralloctypes",
+                "libgralloctypes_mtk",
+                "libhardware",
+                "libhidlbase",
+                "libion",
+                "libladder",
+                "liblog",
+                "libm",
+                "libnativewindow",
+                "libutils",
+                "libutilscallstack",
+                "libz",
+            ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     relative_install_path: "egl",
     prefer: true,
     soc_specific: true,
@@ -2967,18 +2981,31 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgpd1.so",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libgpd1.so",
             ],
+            shared_libs: [
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.common-V7-ndk",
+                "libc++",
+                "libc",
+                "libcutils",
+                "libdl",
+                "libgralloc_extra",
+                "libgralloctypes",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libm",
+                "libnativewindow",
+                "libsync",
+                "libutils",
+                "libutilscallstack",
+            ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
