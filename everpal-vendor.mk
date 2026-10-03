@@ -140,6 +140,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/everpal/proprietary/vendor/etc/camera/hdrcheckerparamsettings.yml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hdrcheckerparamsettings.yml \
     vendor/xiaomi/everpal/proprietary/vendor/etc/camera/intsense_config_undistort.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/intsense_config_undistort.bin \
     vendor/xiaomi/everpal/proprietary/vendor/etc/camera/libalfpc_tuning.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/libalfpc_tuning.bin \
+    vendor/xiaomi/everpal/proprietary/vendor/etc/camera/mibokeh_mt6853_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_mt6853_opencl.bin \
+    vendor/xiaomi/everpal/proprietary/vendor/etc/camera/mibokeh_mt6853_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_mt6853_parameter.bin \
     vendor/xiaomi/everpal/proprietary/vendor/etc/camera/model/dof_model/capture_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_cache \
     vendor/xiaomi/everpal/proprietary/vendor/etc/camera/model/dof_model/capture_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_model \
     vendor/xiaomi/everpal/proprietary/vendor/etc/camera/model/dof_model/capture_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_policy \
